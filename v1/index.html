@@ -8,7 +8,9 @@
     var opcion;
     do {
       opcion = mostrarMenu();
+      if (opcion === null)
+        break;
       jugar(opcion);
-    } while (opcion != "X");
+    } while (1);
   </script>
 </body>

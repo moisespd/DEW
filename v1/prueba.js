@@ -1,18 +1,18 @@
 var diccionarioIngles = ["window", "door", "dog", "cat", "pencil"];
 var diccionarioEspanol = ["ventana", "puerta", "perro", "gato", "lápiz"];
 var puntos = 0;
+var preguntas = 0;
 // -----------------------------------------
 function mostrarMenu() {
   var opcion;
 
   opcion = prompt(
+    "PREGUNTAS: " + preguntas + "\n" +
     "PUNTOS: " + puntos + "\n" +
     "1: sumas\n" +
     "2: restas\n" +
     "3: multiplicaciones\n" +
-    "4: Inglés-español\n" +
-    "5: Español-inglés\n" +
-    "\nElige tu opción (X para terminar): ");
+    "\nElige tu opción: ");
   return opcion;
 }
 
@@ -114,7 +114,7 @@ function jugar(juegoId) {
       aciertaJuego = juegoPalabrasEspanolIngles();
       break;
   }
-
+  preguntas++;
   if (aciertaJuego) {
     alert("OK!!!");
     puntos += 10;
