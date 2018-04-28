@@ -95,7 +95,7 @@ function juegoPalabrasInglesEspanol() {
 // -----------------------------------------
 
 function jugar(juegoId) {
-  var aciertaJuego = true;
+  var aciertaJuego = undefined;
 
   switch (juegoId) {
     case "1":
@@ -113,7 +113,12 @@ function jugar(juegoId) {
     case "5":
       aciertaJuego = juegoPalabrasEspanolIngles();
       break;
+    default:
+      alert("Opción NO válida!!!");
+      return;
+      break;
   }
+
   preguntas++;
   if (aciertaJuego) {
     alert("OK!!!");
