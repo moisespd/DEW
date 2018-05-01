@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="partida.js"></script>
+  <script src="prueba.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css"></link>
+</head>
+<body>
+  <h1>Propiedades de la ventana actual: </h1>
+  <script>
+    // Usando document.write
+    // Objeto window: Mostrar datos de la ventana actual: ancho, alto
+    //    (window.innerWidth)
+    document.write("<p>Ancho: " + window.innerWidth + "</p>");
+    document.write("<p>Alto: " + window.innerHeight + "</p>");
+    document.write("<p>URL: " + window.location.href + "</p>");
+  </script>
+  <script>
+    // Objeto screen: Mostrar datos del navegador: ancho, alto, color-depth
+    //    (screen.width, screen.height)
+    // Mostrar datos de la URL
+    //    window.location.href
+    // Abrir una nueva ventana
+    console.log("innerWidth = " + window.innerWidth);
+    console.log("innerHeight = " + window.innerHeight);
+    console.log("outterHeight = " + window.outerHeight);
+
+    console.log("URL = " + window.location.href);
+    window.status = "some text on the status bar";
+    console.log(screen.width);
+  </script>
+
+</body>
