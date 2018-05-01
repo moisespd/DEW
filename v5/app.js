@@ -6,7 +6,7 @@ var english_words = [
   // fruits
   "orange", "apple", "pear", "banana", "grapes",
   // in the body
-  "hand", "foot", "nose",
+  "hand", "foot", "nose", "tongue", 
   // in the house
   "door", "roof", "floor", "ceiling"];
 // ------------------------------------------------------------
