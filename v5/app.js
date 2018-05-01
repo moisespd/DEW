@@ -1,4 +1,4 @@
-var puntos = 0; 
+var puntos = 0;
 var juego_word_2_image_images_writen = false;
 var english_words = [
   //animals
@@ -9,7 +9,16 @@ var english_words = [
   "hand", "foot", "nose",
   // in the house
   "door", "roof", "floor", "ceiling"];
-
+// ------------------------------------------------------------
+function intro_validar_operacion(e) {
+  tecla = (document.all) ? e.keyCode : e.which;
+  if (tecla==13) validar_operacion();
+}
+// ------------------------------------------------------------
+function intro_validar_image_2_word(e) {
+  tecla = (document.all) ? e.keyCode : e.which;
+  if (tecla==13) validar_image_2_word();
+}
 // ------------------------------------------------------------
 function validar_operacion() {
   var respuesta = document.getElementById("respuesta");
