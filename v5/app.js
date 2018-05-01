@@ -1,4 +1,4 @@
-var puntos = 0;
+var puntos = 0; 
 var juego_word_2_image_images_writen = false;
 var english_words = [
   //animals
