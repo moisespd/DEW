@@ -21,7 +21,7 @@ function updateJungle() {
     return;
   }
 
-  if ((counter > 0) && (counter % 5 == 0)) {
+  if ((jungle.children.length > 0) && (jungle.children.length % 5 == 0)) {
       removeAnimal();
   }
   loadAnimal();
