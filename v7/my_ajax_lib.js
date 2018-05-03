@@ -1,3 +1,5 @@
+var remoteURI = "https://moisespd.github.io/DEW/v7/server/";
+
 // --------------------------------------------------------------------
 function ajaxRETR_connected_players() {
     if (this.readyState == 4 && this.status == 200) {
@@ -9,7 +11,7 @@ function ajaxRETR_connected_players() {
 function ajaxREQ_connected_players() {
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = ajaxRETR_connected_players;
-  xmlhttp.open("GET", "server/connected_players.json", true);
+  xmlhttp.open("GET", remoteURI + "connected_players.json", true);
   xmlhttp.send();
 }
 // --------------------------------------------------------------------
