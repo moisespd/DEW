@@ -1,6 +1,7 @@
-#players_connected {
+#connected_players {
   background: yellow;
   width: 400px;
+  padding: 10px;
 }
 
 #jungle {
